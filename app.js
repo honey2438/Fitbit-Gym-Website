@@ -3,10 +3,6 @@ const app=express();
 const hbs=require('pug');
 const port=process.env.port || 8000;
 const path=require("path");
-const fs=require("fs");
-const bodyparser=require("body-parser");
-const { get } = require("http");
-const { createRequire } = require("module");
 
 app.use('/static', express.static('static'));
 app.use(express.urlencoded());
