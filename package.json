@@ -4,7 +4,8 @@
   "description": "learning express",
   "main": "app.js",
   "scripts": {
-    "nodemon": "nodemon app.js"
+    "nodemon": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "devansh sirohi",
   "license": "ISC",
