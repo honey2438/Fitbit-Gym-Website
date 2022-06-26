@@ -2,7 +2,7 @@
   "name": "devansh",
   "version": "1.0.0",
   "description": "learning express",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "nodemon": "nodemon app.js",
     "start": "node app.js",
