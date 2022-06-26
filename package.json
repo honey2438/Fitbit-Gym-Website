@@ -2,17 +2,19 @@
   "name": "devansh",
   "version": "1.0.0",
   "description": "learning express",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "nodemon": "nodemon app.js",
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
   },
   "author": "devansh sirohi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "nodemon": "^2.0.18",
+    "nodemon": "^1.3.3",
     "pug": "^3.0.2"
   }
 }

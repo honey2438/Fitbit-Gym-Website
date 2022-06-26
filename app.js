@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
 const hbs=require('pug');
-const port=process.env.port || 8000;
+const port=process.env.port || 3338;
 const path=require("path");
 
 app.use('/static', express.static('static'));
