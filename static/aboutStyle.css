@@ -1,0 +1,122 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin:0%;
+}
+body{
+    background: url('gym2.jpg') no-repeat ;
+    background-size: 1550px 1300px;
+}
+    #navbar {
+        position: sticky;
+        top: 0px;
+        left:0%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #navbar::before {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    #logo {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background: url('../static/logo.png') center center no-repeat;
+        filter:invert(100%);
+        background-size: 88px 44px;
+        margin: 10px 60px;
+    }
+    
+    #navbar ul {
+        display: flex;
+    }
+    
+    #navbar li {
+        margin: 15px 70px;
+        list-style: none;
+    
+    }
+    
+    #navbar li a {
+        color: white;
+        display: block;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        padding: 10px 19px;
+        text-decoration: none;
+    }
+    
+    #navbar li a:hover {
+        color: black;
+        background-color: white;
+    }
+    #heading{
+        font-family: 'Russo One', sans-serif;
+        display:block;
+        text-align: center;
+        font-size: 70px;
+        color:white;
+        margin:auto 10px;
+       }
+   main{
+    margin-top:50px;
+       }
+       .img:hover{
+        box-shadow: 0px 0px 20px 10px white;
+       }
+       .images{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+       }
+       .tertiary{
+        font-size: 25px;
+       }
+      .url{
+        cursor: pointer;
+        text-decoration: none;
+        color:white;
+      }
+       .img{
+        margin:0px 145px;
+        margin-top:70px;
+        
+        border:1px solid white;
+        height:400px;
+        width:400px;
+        border-radius: 15px;
+    }
+    h3{
+        margin:10px;
+    }
+       #img1{
+        background: url('machines.jpg') no-repeat;
+        background-size: 555px 410px;
+        background-position-x: -150px;
+       }
+       #img2{
+        background: url('branches.jpg') no-repeat;
+        background-size: 547px 410px;
+        background-position-x: -18px;
+    
+       }
+       #img3{
+        background: url('top.jpg') no-repeat;
+        background-size: 508px 402px;
+        background-position-x: -20px;
+       }
+       #img4{
+        background: url('bmi.jpg') no-repeat;
+        background-size: 555px 410px;
+        background-position-x: -150px;
+       }

@@ -1,0 +1,116 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin:0%;
+}
+body{
+    background-color: grey;
+}
+    #navbar {
+        position: sticky;
+        top: 0px;
+        left:0%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #navbar::before {
+        content: " ";
+        position: absolute;
+        top: -7px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    #logo {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background: url('../static/logo.png') center center no-repeat;
+        filter:invert(100%);
+        background-size: 88px 44px;
+        margin: 10px 60px;
+    }
+    
+    #navbar ul {
+        display: flex;
+    }
+    
+    #navbar li {
+        margin: 15px 70px;
+        list-style: none;
+    
+    }
+    
+    #navbar li a {
+        color: white;
+        display: block;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        padding: 10px 19px;
+        text-decoration: none;
+    }
+    
+    #navbar li a:hover {
+        color: black;
+        background-color: white;
+    }
+   main{
+    margin-top:70px;
+       }
+       #heading{
+        font-family: 'Russo One', sans-serif;
+        display:block;
+        text-align: center;
+        font-size: 70px;
+        color:white;
+        margin:auto 10px;
+       }
+   .image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .img{
+    margin:50px auto;
+    border:1px solid white;
+    border-radius: 5px;
+    height:460px;
+    width:690px;
+   }
+   #img1{
+   background: url('img3.jpg') no-repeat;
+   background-size: 690px 460px;
+   }
+   #img2{
+    background: url('img2.jpg') no-repeat;
+   background-size: 690px 460px;
+}
+#img3{
+    background: url('img7.jpg')no-repeat;
+   background-size: 690px 460px;
+}
+#img4{
+    background: url('img4.jpg')no-repeat;
+   background-size: 690px 460px;
+}
+#img5{
+    background: url('img5.jpg')no-repeat;
+   background-size: 690px 460px;
+}
+#img6{
+    background: url('img1.jpg')no-repeat;
+   background-size: 690px 460px;
+}
+#img7{
+    background: url('img8.jpg')no-repeat;
+   background-size: 690px 460px;
+}
+#img8{
+    background: url('img6.jpg')no-repeat;
+   background-size: 690px 460px;
+}
