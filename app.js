@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express();
-const port=process.env.PORT ||8000;
+const port=process.env.PORT || 3000;
 const path=require("path");
 const fs=require("fs");
 const mongoose = require('mongoose');
@@ -12,14 +12,14 @@ const { createRequire } = require("module");
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/new');
+  await mongoose.connect('mongodb://localhost:27017/data');
 }
 
 app.use('/static', express.static('static'));
 app.use(express.urlencoded());
 
 app.set('view engine','pug');
-app.set('views',path.join(__dirname,'../views'));
+app.set('views',path.join(__dirname,'views'));
 
 app.get("/index",(req,res)=>{
     const param={'title':"Home"};
