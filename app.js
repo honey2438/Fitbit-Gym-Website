@@ -3,10 +3,8 @@ const app = express();
 const pug =require("pug");
 const port = process.env.PORT || 8000;
 const path = require("path");
-const bodyParser=require("body-parser");
 
 app.use("/static", express.static("static"));
-app.use(express.urlencoded());
 
 app.set('view engine','pug');
 app.set('views',path.join(__dirname,'views'));
