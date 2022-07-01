@@ -5,8 +5,6 @@ const port = process.env.PORT || 8000;
 const path = require("path");
 const bodyParser=require("body-parser");
 
-main().catch((err) => console.log(err));
-
 app.use("/static", express.static("static"));
 app.use(express.urlencoded());
 
