@@ -2,9 +2,9 @@
   "name": "devansh",
   "version": "1.0.0",
   "description": "learning express",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "nodemon":"node index.js",
+    "nodemon":"node app.js",
     "start": "npm run nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

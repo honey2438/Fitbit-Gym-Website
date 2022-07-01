@@ -18,7 +18,7 @@ app.use(express.urlencoded());
 app.set('view engine','pug');
 app.set('views',path.join(__dirname,'views'));
 
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
   const param = { title: "Home" };
   res.status(200).render("index.pug", param);
 });
