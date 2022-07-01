@@ -5,10 +5,8 @@
   "main": "app.js",
   "scripts": {
     "nodemon": "nodemon app.js",
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "pretest": "npm run lint --silent"
+    "start": "npm run nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "devansh sirohi",
   "license": "ISC",
