@@ -2,10 +2,10 @@
   "name": "devansh",
   "version": "1.0.0",
   "description": "learning express",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "nodemon":"node app.js",
-    "start": "npm run nodemon app.js",
+    "nodemon":"node index.js",
+    "start": "npm run nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "devansh sirohi",
