@@ -4,8 +4,7 @@
   "description": "learning express",
   "main": "app.js",
   "scripts": {
-    "nodemon": "npm run nodemon",
-    "start": "--omit=dev",
+    "start": "npm run nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "devansh sirohi",
