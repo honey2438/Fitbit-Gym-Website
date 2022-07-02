@@ -1,0 +1,13 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img{
+    height: 120px;
+    width: auto;
+    background: url('tick.png')center center no-repeat;
+    background-size: 190px 140px;
+    padding-top: 340px;
+}
