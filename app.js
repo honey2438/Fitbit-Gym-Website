@@ -11,7 +11,7 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://honeysirohi2438:<Honey@0812>@cluster0.p9xkv.mongodb.net/Customers"
+    "mongodb+srv://honeysirohi2438:Honey@0812@cluster0.p9xkv.mongodb.net/Customers"
   );
 }
 app.use("/static", express.static("static"));
