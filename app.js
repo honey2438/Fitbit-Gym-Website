@@ -5,15 +5,14 @@ const port = process.env.PORT || 8000;
 const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-app.use(bodyParser.json());
 
-main().catch((err) => console.log(err));
+  mongoose.connect('mongodb+srv://honeysirohi2438:1234@cluster0.p9xkv.mongodb.net/customerdata',{
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+  }).then(()=>
+  console.log("Connected successfully")).catch((err)=>
+  console.log(err));
 
-async function main() {
-  await mongoose.connect(
-    "mongodb+srv://honeysirohi2438:Honey@0812@cluster0.p9xkv.mongodb.net/Customers"
-  );
-}
 app.use("/static", express.static("static"));
 
 app.set("view engine", "pug");
@@ -29,24 +28,24 @@ app.get("/contact", (req, res) => {
   res.status(200).render("contact.pug", param);
 });
 
+
 const contactSchema = new mongoose.Schema({
   nam: String,
   age: String,
   city: String,
-  mobileNo: String,
+  mobileNo: String
 });
 
 const contact = mongoose.model("contact", contactSchema);
 
+app.use(bodyParser.json());
+
 app.post("/contact", (req, res) => {
   var myData = new contact(req.body);
-  myData
-    .save()
-    .then(() => {
+  myData.save().then(() => {
       res.status(200).render("success.pug");
-    })
-    .catch(() => {
-      res.status(400).send("item was not saved to the databse");
+    }).catch(() => {
+      res.status(400).send("item was not saved to the database");
     });
 });
 
