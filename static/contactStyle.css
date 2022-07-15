@@ -90,7 +90,7 @@ body {
     #navbar {
         flex-direction: column;
         padding-bottom: 8px;
-        height: 102px;
+        height: 126px;
     }
 
     #navbar ul li a {

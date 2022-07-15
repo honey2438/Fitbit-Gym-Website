@@ -90,7 +90,7 @@ body {
     #navbar {
         flex-direction: column;
         padding-bottom: 8px;
-        height: 102px;
+        height: 126px;
     }
 
     #navbar ul li a {
@@ -171,7 +171,7 @@ h1 {
     }
 
     main h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     label {
