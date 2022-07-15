@@ -40,7 +40,7 @@ app.get("/bmi", (req, res) => {
 //post method for posting
 app.post("/contact",async (req, res) => {
   var myData = new contact({
-    nam: req.body.nam,
+    name: req.body.name,
     age: req.body.age,
     city: req.body.city,
     mobileNo: req.body.mobileNo
