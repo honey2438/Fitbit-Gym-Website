@@ -177,10 +177,12 @@ main {
     }
 
     #button {
+        width:100px;
         padding: 3px 5px;
         font-size: 1rem;
         margin: 12px auto;
         border: 2px solid white;
+        text-align:center
     }
 }
 
