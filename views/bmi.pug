@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#{title}</title>
+    <link rel="stylesheet" href="../static/bmi.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Smooch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../static/style.css">
 </head>
-
 
 <body>
     <header class="container">
         <nav id="navbar">
-        <div id="logo">
+            <div id="logo">
 
-        </div>
-        <ul>
-            <li class="item"><a href="/">Home</a></li>
-            <li class="item"><a href="/gallery" >Gallery</a></li>
-            <li class="item"><a href="/about" >About Us</a></li>
-            <li class="item"><a href="/contact">Contact Us</a></li>
-        </ul>
-    </nav>
+            </div>
+            <ul>
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/gallery">Gallery</a></li>
+                <li class="item"><a href="/about">About Us</a></li>
+                <li class="item"><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
 
         </div>
     </header>
     <main>
-        <div class="primary"  >BUILD THE PERFECT BODY</div>
-        <div class="secondary"  >With</div>
-        <div class="mainheading" >FITBIT GYM</div>
-        <a id="button" href="/contact" >JOIN NOW</a>
+
+        <div id="heading">BMI Calculator</B></div>
+        <label for="weight">
+            <h1>Enter Your Weight(in kgs)</h1>
+            <input type="text" id="weight">
+        </label>
+        <label for="height">
+            <h1>Enter Your height(in metres)</h1>
+            <input type="text" id="height">
+        </label>
+        <button id="button">Submit</button>
+        <label for="bmi">
+            <h1>Your BMI is:</h1>
+            <div id="bmi"></div>
+        </label>
     </main>
 
     <section id="footer">
@@ -79,4 +88,6 @@
     </section>
 
 </body>
+<script src="../static/bmi.js"></script>
+
 </html>
