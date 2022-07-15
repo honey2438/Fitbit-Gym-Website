@@ -165,48 +165,47 @@ main {
 
     .img {
         margin: 25px auto;
-        height: 266px;
-        width: 400px;
-    }
+        height: 255px;
+        width: 340px; }
 
     #img1 {
         background: url('img3.jpg') no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img2 {
         background: url('img2.jpg') no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img3 {
         background: url('img7.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img4 {
         background: url('img4.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img5 {
         background: url('img5.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img6 {
         background: url('img1.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img7 {
         background: url('img8.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 
     #img8 {
         background: url('img6.jpg')no-repeat;
-        background-size: 400px 266px;
+        background-size: 340px 255px;
     }
 }
 
