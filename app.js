@@ -4,9 +4,8 @@ const pug = require("pug");
 const port = process.env.PORT || 8000;
 const path = require("path");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
+const bodyparser = require("body-parser");
 require("dotenv").config();
-const contact=require("./model/contact");
   
 //mongoose Connection
   mongoose.connect(process.env.MONGOOSE_URL_STRING,{
@@ -15,6 +14,15 @@ const contact=require("./model/contact");
   }).then(()=>
   console.log("Connected successfully")).catch((err)=>
   console.log(err));
+
+const contactSchema = new mongoose.Schema({
+    nam: String,
+    age: String,
+    city: String,
+    mobileNo: String,
+  });
+  
+  const Contact = mongoose.model("contact", contactSchema);
 
   //linking static files
 app.use("/static", express.static("static"));
@@ -39,13 +47,8 @@ app.get("/bmi", (req, res) => {
 });
 //post method for posting
 app.post("/contact",async (req, res) => {
-  var myData = new contact({
-    name: req.body.name,
-    age: req.body.age,
-    city: req.body.city,
-    mobileNo: req.body.mobileNo
-  });
-  await contact.create(myData).then(() => {
+  var myData = new Contact(req.body);
+  await Contact.create(myData).then(() => {
       res.status(200).render("success.pug");
     }).catch(() => {
       res.status(400).send("item was not saved to the database");
