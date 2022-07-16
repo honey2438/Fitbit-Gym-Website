@@ -15,7 +15,7 @@ HTML, CSS, Javascript, Nodejs, Mongodb
 Github and Heroku
 
 
-<h1>Front Page</h1>
+<h1>Home Page</h1>
 
 ![Screenshot (36)](https://user-images.githubusercontent.com/91769500/179350823-009a970c-4e1a-43f2-81b2-23e0e169b9e6.png)
 
