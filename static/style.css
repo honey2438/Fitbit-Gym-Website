@@ -185,6 +185,12 @@ main {
         text-align:center
     }
 }
+@media(max-width:500px){
+    body::before{
+        background: url('gymbg.jpg') no-repeat center center;
+        background-size: 100% 100%;
+    }
+}
 
 section {
     margin-top: 104px;

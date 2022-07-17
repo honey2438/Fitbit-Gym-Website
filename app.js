@@ -6,6 +6,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 require("dotenv").config();
+require("static/contact.js");
   
 //mongoose Connection
   mongoose.connect(process.env.MONGOOSE_URL_STRING,{

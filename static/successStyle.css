@@ -11,3 +11,8 @@ body{
     background-size: 190px 140px;
     padding-top: 340px;
 }
+@media (max-width:1000px){
+h1{
+    font-size: 1.5rem;
+}
+}
